@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936477278369",
+    "project_id": "hello-crud-4bd1f",
+    "storage_bucket": "hello-crud-4bd1f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936477278369:android:fdd913643c8e41295630e0",
+        "android_client_info": {
+          "package_name": "com.example.hellocrud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBXChJbn72baqV7iEhh5vCQ1nHkXna_u8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

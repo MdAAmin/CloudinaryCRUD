@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello.Crud</string>
+    <string name="preview_image">Preview Image</string>
+    <string name="hello_world" />
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+</resources>
