@@ -39,16 +39,4 @@
         android:layout_weight="1"
         android:layout_margin="10dp" />
 
-    <!-- Floating Action Button for adding new entries -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:src="@drawable/pic"
-        android:contentDescription="Add Item"
-        app:fabSize="normal"
-        app:tint="@android:color/white" />
-
 </LinearLayout>

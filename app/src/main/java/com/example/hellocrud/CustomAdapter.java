@@ -1,7 +1,9 @@
 package com.example.hellocrud;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,7 +44,20 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.title.setText(model.getTitle());
         holder.subtitle.setText(model.getSubtitle());
 
-        // Handle item click to open the pop-up menu
+        // Handle item click to open the PDF
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setDataAndType(Uri.parse(model.getPdfUrl()), "application/pdf");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
+            try {
+                context.startActivity(intent);
+            } catch (ActivityNotFoundException e) {
+                Toast.makeText(context, "No application available to view PDF", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Handle item long click to open the pop-up menu
         holder.itemView.setOnLongClickListener(v -> {
             PopupMenu popupMenu = new PopupMenu(context, v);
             popupMenu.inflate(R.menu.popup_menu); // Define popup_menu.xml in res/menu folder

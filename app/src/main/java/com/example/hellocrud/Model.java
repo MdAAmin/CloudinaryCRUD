@@ -50,4 +50,3 @@ public class Model {
         this.key = key;
     }
 }
-
